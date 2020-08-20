@@ -71,7 +71,7 @@
 		},
 		"RUN_ARGS": {
 			"description": "Only Change this if U Know",
-			"value": "['-P', '--ignore-checksum' , '--stats=1s', '--log-level=DEBUG', '--log-file=/app/icopy_cloner_debug.log']"
+			"value": "['--log-level=DEBUG', '--log-file=/app/icopy_cloner_debug.log']"
 		},
 		"SA_PATH": {
 			"description": "Dont Change",
