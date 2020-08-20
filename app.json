@@ -10,12 +10,36 @@
 		"USER_ID": {
 			"description": "get from telegram get_id_bot"
 		},
+		"DB_ADDRESS": {
+			"description": "MongoDB Host Address"
+		},
+		"DB_USERNAME": {
+			"description": "MongoDB Username"
+		},
+		"DB_PASS": {
+			"description": "MongoDB Password"
+		},
+		"SA_ZIP_URL": {
+			"description": "Service Accounts ZIP URL.It Should be Zipped Such that it should have a folder named accounts with SA in it "
+		},
+		"SA_INIT_FILE": {
+			"description": "Give a service account File Name. ex 1.json "
+		},
+		"LANGUAGE": {
+			"description": "cn by Default Support eng and jp",
+			"value": "cn"
+		},
+		"PARALLEL_CHECKERS": {
+			"description": "Dont Give More than 300 Heroku Free Dyno may Crash",
+			"value": "250"
+		},
+		"PARALLEL_TRANSFERS": {
+			"description": "Dont Give More than 300 Heroku Free Dyno may Crash",
+			"value": "250"
+		},
 		"DB_CONNECT_METHOD": {
 			"description": "DB Connect Method",
 			"value": "mongodb+srv"
-		},
-		"DB_ADDRESS": {
-			"description": "MongoDB Host Address"
 		},
 		"DB_PORT": {
 			"description": "MongoDB Port, Default is 27017",
@@ -24,16 +48,6 @@
 		"DB_NAME": {
 			"description": "U Can give any name, Default is  iCopy",
 			"value": "iCopy"
-		},
-		"DB_USERNAME": {
-			"description": "MongoDB Username"
-		},
-		"DB_PASS": {
-			"description": "MongoDB Password"
-		},
-		"LANGUAGE": {
-			"description": "cn by Default Support eng and jp",
-			"value": "cn"
 		},
 		"CLONER": {
 			"description": "Dont Change this",
@@ -47,27 +61,13 @@
 			"description": "Give a Rclone Remote Name Default is also fine",
 			"value": "icopy"
 		},
-		"PARALLEL_CHECKERS": {
-			"description": "Dont Give More than 300 Heroku Free Dyno may Crash",
-			"value": "250"
-		},
-		"PARALLEL_TRANSFERS": {
-			"description": "Dont Give More than 300 Heroku Free Dyno may Crash",
-			"value": "250"
-		},
 		"MIN_SLEEP": {
 			"description": "customize drive-pacer-min-sleep",
 			"value": "1ms"
 		},
-		"SA_INIT_FILE": {
-			"description": "Give a service account File Name. ex 1.json "
-		},
 		"RCLONE_CONFIG": {
 			"description": "Dont Change",
 			"value": "/app/iCopy/config/rclone.conf"
-		},
-		"SA_ZIP_URL": {
-			"description": "Service Accounts ZIP URL.It Should be Zipped Such that it should have a folder named accounts with SA in it "
 		},
 		"RUN_ARGS": {
 			"description": "Only Change this if U Know",

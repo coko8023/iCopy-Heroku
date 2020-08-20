@@ -56,7 +56,9 @@ service_account_file = /app/iCopy/accounts/$SA_INIT_FILE
 service_account_file_path = $SA_PATH
 " >> rclone.conf
 cd ..
-wget --no-check-certificate -q $SA_ZIP_URL -O accounts.zip
-unzip -qq accounts.zip -d /app/iCopy/
+ACCOUNTS_FILE="accounts.zip"
+wget --no-check-certificate -q $SA_ZIP_URL -O $ACCOUNTS_FILE
+unzip -qq $ACCOUNTS_FILE -d /app/iCopy/
+rm -rf $ACCOUNTS_FILE
 chmod 777 iCopy.py
 python3 iCopy.py
