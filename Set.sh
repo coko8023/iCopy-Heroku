@@ -43,9 +43,9 @@ run_args = $RUN_ARGS
 
 [web]
 
-dashboard = 0 # web service switch
+dashboard = 0
 
-port = 8000 # web service port, default is 8000.
+port = 8000
 
 " >> conf.toml
 
